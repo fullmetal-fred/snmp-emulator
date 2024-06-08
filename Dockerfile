@@ -6,4 +6,4 @@ USER snmp
 RUN mkdir data
 COPY . .
 USER snmp
-CMD ["snmpsim-command-responder", "--data-dir=./data/ups", "--agent-udpv4-endpoint=0.0.0.0:1611"]
+CMD ["snmpsim-command-responder", "--data-dir=./data", "--agent-udpv4-endpoint=0.0.0.0:1611"]
